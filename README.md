@@ -1,3 +1,10 @@
+# React Search
+
+This is a web app template for ease of using a Search component in any React web app.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
