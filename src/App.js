@@ -1,9 +1,11 @@
 import React from 'react';
+import Search from './components/Search';
+import initialDetails from './data/initialDetails';
 
 function App() {
   return (
-    <div>
-      
+    <div className="tc bg-green ma0 pa4">
+      <Search details={initialDetails}/>
     </div>
   );
 }
