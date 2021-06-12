@@ -24,7 +24,12 @@ function Search({ details }) {
 
   const handleChange = e => {
     setSearchField(e.target.value);
-    setSearchShow(true);
+    if(e.target.value===""){
+      setSearchShow(false);
+    }
+    else {
+      setSearchShow(true);
+    }
   };
 
   function searchList() {
