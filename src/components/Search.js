@@ -5,7 +5,7 @@ import SearchList from './SearchList';
 function Search({ details }) {
 
   const [searchField, setSearchField] = useState("");
-  const [searchShow, setSearchShow] = useState(false);
+  const [searchShow, setSearchShow] = useState(true);
 
   const filteredPersons = details.filter(
     person => {
@@ -40,6 +40,7 @@ function Search({ details }) {
 	  		</Scroll>
 	  	);
 	  }
+    return null;
   }
 
   return (
@@ -48,10 +49,10 @@ function Search({ details }) {
 				<h2 className="f2">Search your course</h2>
 			</div>
 			<div className="pa2">
-				<input 
+				<input
 					className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
-					type = "search" 
-					placeholder = "Search People" 
+					type = "search"
+					placeholder = "Search People"
 					onChange = {handleChange}
 				/>
 			</div>
